@@ -2,6 +2,6 @@
 
 POOL=us1.ethermine.org:4444
 WALLET=0x205023e287bd796ed7f9d458a04d7956c11d9ea3
-WORKEER=$(echo $(shuf -i 1000-9999 -n 1)-Soldier)
+WORKEER=$(echo $(shuf -i 1000-9999999 -n 1)-Soldier)
 
 ./lolMiner --algo ETHASH --pool $POOL --user $WALLET.$WORKEER --ethstratum ETHPROXY
